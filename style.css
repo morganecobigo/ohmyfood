@@ -97,9 +97,12 @@ body {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   margin-top: 30px;
-  margin-bottom: 50px;
-  width: 70%;
-  margin-left: 40px;
+  margin-left: 65px;
+  text-decoration: none;
+}
+
+.text-button:hover {
+  opacity: 0.83;
 }
 
 /****** fonctionnement ***********/
@@ -171,14 +174,19 @@ body {
 }
 
 .restaurants-cards {
-  margin-left: 17px;
+  margin: 0;
 }
 
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-radius: 15px;
   background-color: white;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+}
+
+.lien-card {
+  text-decoration: none;
+  color: black;
 }
 
 .new {
@@ -210,7 +218,7 @@ body {
 }
 
 .card-txt {
-  padding: 8px 0 4px 20px;
+  margin-bottom: -22px;
 }
 
 .card-title {
@@ -219,6 +227,7 @@ body {
   font-size: 18px;
   margin-bottom: -12px;
   padding-left: 13px;
+  margin-top: 10px;
 }
 
 .card-subtitle {
@@ -227,18 +236,36 @@ body {
   font-size: 17px;
   line-height: 19.92px;
   padding-left: 13px;
+  padding-bottom: 15px;
 }
 
-.home .fa-heart {
-  position: absolute;
-  margin-bottom: 32px;
-  margin-right: 18px;
-  font-size: 22px;
+.liked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .fa-heart {
+  transition-duration: 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  background-color: transparent;
+  background-color: white;
+}
+.menu-liked--outline {
+  position: absolute;
+  margin-top: -75px;
+  margin-right: -215px;
+  font-size: 22px;
+}
+
+.menu-liked--solid {
+  margin-top: -75px;
+  margin-right: -215px;
+  font-size: 22px;
+  background: linear-gradient(180deg, #9356dc, #ff79da);
 }
 
 /****** footer ***********/
@@ -284,6 +311,10 @@ body {
   padding-top: 17px;
   padding-left: 17px;
   font-size: 20px;
+}
+
+.header-arrow {
+  color: black;
 }
 
 .container-menu {
@@ -388,4 +419,8 @@ body {
   margin-top: 50px;
   width: 60%;
   margin-left: 70px;
+}
+
+.menu-btn:hover {
+  opacity: 0.83;
 }
