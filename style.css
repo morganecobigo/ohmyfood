@@ -62,7 +62,7 @@ body {
 
 /****** decouverte menu ***********/
 
-.menu {
+.menu-choice {
   background: #f8f9f9;
   margin-left: -8.5px;
   padding-top: 20px;
@@ -83,9 +83,6 @@ body {
   font-size: 18px;
   height: 48px;
   padding-left: 12px;
-}
-
-.menu-button {
 }
 
 .text-button {
@@ -208,7 +205,7 @@ body {
 .img-card {
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 231px;
+  height: 182px;
   object-fit: cover;
 }
 
@@ -280,7 +277,7 @@ body {
   line-height: 18.75px;
 }
 
-/****** Menus ***********/
+/****** Pages menus ***********/
 
 .header-button {
   position: absolute;
@@ -289,7 +286,106 @@ body {
   font-size: 20px;
 }
 
+.container-menu {
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  background-color: rgba(246, 246, 246, 1);
+  padding-top: 15px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -49px;
+}
+
 .photo-menu {
-  width: 375px;
-  height: 275px;
+  width: 100%;
+}
+
+.menu {
+  width: 95%;
+  margin-left: 10px;
+}
+
+.menu-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.title-menu {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40px;
+  margin: 15px 0 15px 0;
+}
+
+.menu-category-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.dish-category {
+  border-radius: 15.04px;
+  background-color: white;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  padding: 5px 0 15px 15px;
+}
+
+.dish-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.09px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.dish-ingredient {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17.63px;
+  margin-bottom: 0;
+}
+
+.dish-price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15.04px;
+  line-height: 17.63px;
+  text-align: end;
+  margin: 0;
+  margin-right: 10px;
+  margin-top: -18px;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 180%;
+  border-top-right-radius: 16px;
+  border-top-bottom-radius: 16px;
+  background-color: #99e2d0;
+  color: white;
+}
+
+.menu-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  padding: 13px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  margin-top: 50px;
+  width: 60%;
+  margin-left: 70px;
 }
