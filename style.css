@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0 0;
+  margin: 0;
 }
 
 /****** mobile first ***********/
@@ -193,14 +193,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  text-align: center;
   position: absolute;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 13px;
   background-color: #99e2d0;
   color: #2c9c81;
-  margin-top: 13px;
-  margin-left: 170px;
+  margin-top: -180px;
+  margin-left: 197px;
 }
 
 .card-img {
@@ -247,7 +246,6 @@ body {
 }
 
 .fa-heart {
-  transition-duration: 0.25s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +266,13 @@ body {
   font-size: 22px;
   background: linear-gradient(180deg, #9356dc, #ff79da);
   padding: 0;
+}
+
+.menu-liked--outline:before {
+  background-color: white;
+}
+.menu-liked--solid:after {
+  background: linear-gradient(180deg, #9356dc, #ff79da);
 }
 
 /****** footer ***********/
@@ -306,6 +311,76 @@ body {
   line-height: 18.75px;
 }
 
+/****** Medias Queries homepage ***********/
+
+/* big devices (desktop, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  .header img {
+    padding: 14px 380px;
+  }
+
+  .menu-title {
+  }
+
+  .menu-subtitle {
+    margin-bottom: 40px;
+  }
+  .text-button {
+    margin-left: 410px;
+  }
+
+  .tuto-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -110px;
+  }
+
+  .tuto-number {
+    margin-right: 0;
+  }
+
+  .tuto-icon {
+    padding-right: 14px;
+    margin: 0 0 0 30px;
+  }
+
+  .tuto-text {
+    margin-left: -20px;
+  }
+
+  .restaurants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .card {
+    margin-right: 57px;
+  }
+  .card-img {
+    height: 231px;
+  }
+
+  .footer {
+    padding: 30px 25px 30px 25px;
+    width: 85%;
+  }
+
+  .container-list {
+    padding: -1px;
+  }
+  .logo-footer {
+    float: right;
+    margin-top: 10px;
+    margin-right: 24px;
+  }
+
+  .liens-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+  }
+}
+
 /****** Pages menus ***********/
 
 .header-button {
@@ -342,7 +417,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 43px;
 }
 
 .title-menu {
@@ -371,11 +446,22 @@ body {
 }
 
 .dish-category {
+  width: 90%;
+  overflow: hidden;
+  display: flex;
   border-radius: 15.04px;
   background-color: white;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  padding: 5px 0 15px 15px;
+  padding-left: 30px;
   margin-top: 17px;
+}
+.dish-category-container {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.dish-category-title {
+  flex: 1;
+  margin-left: -20px;
 }
 
 .dish-title {
@@ -403,32 +489,28 @@ body {
   text-align: end;
   margin: 0;
   margin-right: 10px;
-  margin-top: -18px;
+  margin-top: -20px;
 }
 
 .check {
+  transition: 1s;
+  width: 80px;
+  height: 100%;
+  margin-right: -80px;
+  background-color: #99e2d0;
+}
+
+.dish-category:hover .check {
+  margin-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 15%;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  background-color: #99e2d0;
-  color: white;
-  float: right;
-  margin-top: -72px;
-  padding-bottom: 56px;
-}
-
-.check:hover {
-  position: absolute;
-  transform: translateX(60px);
-  transition: 0.5s ease-in-out;
 }
 
 .fa-circle-check {
-  transform: rotate(360deg);
+  padding: 25px 25px 25px 20px;
+  color: white;
+  position: fixed;
 }
 
 .menu-btn {
@@ -444,7 +526,7 @@ body {
   cursor: pointer;
   margin-top: 50px;
   width: 60%;
-  margin-left: 70px;
+  margin-left: 65px;
 }
 
 .menu-btn:hover {
@@ -452,17 +534,3 @@ body {
 }
 
 /****** Medias Queries ***********/
-
-/* Big devices (desktop, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  .header img {
-    width: 200px;
-    height: 34.2px;
-    padding-top: 30px;
-    margin-left: 340px;
-  }
-}
-
-/* Medium devices (tablets, less/equal than 768px) */
-@media (max-width: 1024px) {
-}
