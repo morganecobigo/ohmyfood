@@ -133,7 +133,7 @@ body {
   color: white;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 50px;
   position: absolute;
   margin-left: -100%;
 }
@@ -147,8 +147,13 @@ body {
 }
 .tuto-icon {
   color: #7e7e7e;
-  margin: 0 15px 0 6px;
+  margin: 0;
 }
+.tuto-color {
+  margin: 0;
+  color: rgba(147, 86, 220, 1);
+}
+
 .tuto-text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -198,7 +203,6 @@ body {
   padding: 13px;
   background-color: #99e2d0;
   color: #2c9c81;
-  margin-top: -180px;
   margin-left: 197px;
 }
 
@@ -245,14 +249,6 @@ body {
   cursor: pointer;
 }
 
-.fa-heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: white;
-}
-
 .menu-liked--outline {
   position: absolute;
   margin-top: -75px;
@@ -261,18 +257,23 @@ body {
 }
 
 .menu-liked--solid {
+  font-size: 22px;
   margin-top: -75px;
   margin-right: -215px;
-  font-size: 22px;
-  background: linear-gradient(180deg, #9356dc, #ff79da);
-  padding: 0;
+  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 500ms ease-in-out;
+}
+.liked:hover .menu-liked--outline {
+  opacity: 0;
+}
+.liked:hover .menu-liked--solid {
+  opacity: 1;
 }
 
 .menu-liked--outline:before {
   background-color: white;
-}
-.menu-liked--solid:after {
-  background: linear-gradient(180deg, #9356dc, #ff79da);
 }
 
 /****** footer ***********/
@@ -313,31 +314,36 @@ body {
 
 /****** Medias Queries homepage ***********/
 
-/* big devices (desktop, less/equal than 1024px) */
-@media (min-width: 1024px) {
+/* big devices (desktop, less/equal than 1440px) */
+@media (min-width: 768px) {
   .header img {
-    padding: 14px 380px;
-  }
-
-  .menu-title {
-  }
-
-  .menu-subtitle {
-    margin-bottom: 40px;
+    padding: 14px 602px;
   }
   .text-button {
-    margin-left: 410px;
+    margin-left: 602px;
+  }
+
+  .fonction {
+    padding: 50px 180px 50px 50px;
+  }
+
+  .tuto-title {
+    margin-left: 90px;
   }
 
   .tuto-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -110px;
+  }
+
+  .tuto-button {
+    height: 72.5px;
+    padding-right: 50px;
   }
 
   .tuto-number {
-    margin-right: 0;
+    margin-right: -47px;
   }
 
   .tuto-icon {
@@ -345,192 +351,60 @@ body {
     margin: 0 0 0 30px;
   }
 
+  .tuto-color {
+    margin: 0 20px 0 25px;
+  }
+
   .tuto-text {
     margin-left: -20px;
   }
 
+  .section-title {
+    margin-left: 30px;
+  }
+
+  .section-cards {
+    padding: 50px 180px 50px 130px;
+  }
+
   .restaurants-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0fr);
+    padding-left: 27px;
   }
   .card {
     margin-right: 57px;
+    margin-bottom: 100px;
+    width: 490px;
+    height: 251px;
+  }
+
+  .new {
+    margin: 13px 0 0 357.41px;
   }
   .card-img {
     height: 231px;
+    margin-top: -57px;
   }
 
-  .footer {
-    padding: 30px 25px 30px 25px;
-    width: 85%;
+  .img-card {
+    height: 231px;
+    margin-top: -57px;
   }
 
   .container-list {
-    padding: -1px;
+    padding: 30px 25px 30px 25px;
   }
   .logo-footer {
     float: right;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-right: 24px;
   }
 
   .liens-footer {
     display: grid;
     grid-template-columns: repeat(4, 190px);
+    padding-left: 470px;
+    margin: 16px;
   }
 }
-
-/****** Pages menus ***********/
-
-.header-button {
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 17px;
-  font-size: 20px;
-}
-
-.header-arrow {
-  color: black;
-}
-
-.container-menu {
-  border-top-right-radius: 32px;
-  border-top-left-radius: 32px;
-  background-color: rgba(246, 246, 246, 1);
-  padding-top: 15px;
-  padding-bottom: 40px;
-  position: relative;
-  margin-top: -49px;
-}
-
-.photo-menu {
-  width: 100%;
-}
-
-.menu {
-  width: 95%;
-  margin-left: 10px;
-}
-
-.menu-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 43px;
-}
-
-.title-menu {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 40px;
-  margin: 15px 0 15px 0;
-}
-
-.menu-category-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-.menu-category-title:after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  margin-left: -66px;
-  margin-top: 27px;
-}
-
-.dish-category {
-  width: 90%;
-  overflow: hidden;
-  display: flex;
-  border-radius: 15.04px;
-  background-color: white;
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  padding-left: 30px;
-  margin-top: 17px;
-}
-.dish-category-container {
-  width: 100%;
-  padding-bottom: 15px;
-}
-.dish-category-title {
-  flex: 1;
-  margin-left: -20px;
-}
-
-.dish-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21.09px;
-  margin-bottom: -10px;
-  margin-top: 10px;
-}
-
-.dish-ingredient {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 17.63px;
-  margin-bottom: 0;
-}
-
-.dish-price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 15.04px;
-  line-height: 17.63px;
-  text-align: end;
-  margin: 0;
-  margin-right: 10px;
-  margin-top: -20px;
-}
-
-.check {
-  transition: 1s;
-  width: 80px;
-  height: 100%;
-  margin-right: -80px;
-  background-color: #99e2d0;
-}
-
-.dish-category:hover .check {
-  margin-right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-circle-check {
-  padding: 25px 25px 25px 20px;
-  color: white;
-  position: fixed;
-}
-
-.menu-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  padding: 13px;
-  border-radius: 25px;
-  border: none;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-  margin-top: 50px;
-  width: 60%;
-  margin-left: 65px;
-}
-
-.menu-btn:hover {
-  opacity: 0.83;
-}
-
-/****** Medias Queries ***********/
