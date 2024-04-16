@@ -313,10 +313,12 @@ body {
 
 /****** Medias Queries homepage ***********/
 
-/* big devices (desktop, less/equal than 1440px) */
-@media (min-width: 768px) {
+/* big devices (desktop) */
+@media screen and (min-width: 1024px) {
   .header img {
-    padding: 14px 602px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .text-button {
     margin-left: 602px;
@@ -386,13 +388,11 @@ body {
 
   .card-img {
     height: 231px;
-    margin-top: -57px;
     object-fit: cover;
   }
 
   .img-card {
     height: 231px;
-    margin-top: -57px;
   }
 
   .liked {
@@ -418,32 +418,8 @@ body {
   }
 }
 
-/* Medium devices (tablets, less/equal than 767px) */
-@media (max-width: 1024px) {
-  .header img {
-    padding-left: 267px;
-  }
-
-  .menu-title {
-    padding-left: 0px;
-  }
-
-  .text-button {
-    margin-left: 276px;
-  }
-  .section-cards {
-    padding-left: 30px;
-  }
-  .new {
-    margin-left: 604px;
-  }
-  .card-img {
-    object-fit: cover;
-  }
-
-  .liked {
-    width: 152%;
-  }
+/* Medium devices (tablets) */
+@media screen and (min-width: 768px) {
 }
 
 /****** Pages menus ***********/
