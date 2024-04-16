@@ -418,6 +418,34 @@ body {
   }
 }
 
+/* Medium devices (tablets, less/equal than 767px) */
+@media (max-width: 1024px) {
+  .header img {
+    padding-left: 267px;
+  }
+
+  .menu-title {
+    padding-left: 0px;
+  }
+
+  .text-button {
+    margin-left: 276px;
+  }
+  .section-cards {
+    padding-left: 30px;
+  }
+  .new {
+    margin-left: 604px;
+  }
+  .card-img {
+    object-fit: cover;
+  }
+
+  .liked {
+    width: 152%;
+  }
+}
+
 /****** Pages menus ***********/
 
 .header-button {
@@ -432,27 +460,27 @@ body {
 }
 
 .banniere1 {
-  background-image: url("assets/ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
 
 .banniere2 {
-  background-image: url("assets/ImagesettextesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: right;
 }
 .banniere3 {
-  background-image: url("assets/ImagesettextesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
 
 .banniere4 {
-  background-image: url("assets/ImagesettextesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
@@ -637,3 +665,68 @@ body {
 }
 
 /****** Medias Queries ***********/
+
+/* big devices (desktop, less/equal than 1440px) */
+@media (min-width: 768px) {
+  .banniere1 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -390px;
+    margin-left: -127px;
+  }
+
+  .banniere2 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -390px;
+    margin-left: -127px;
+  }
+
+  .banniere3 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -390px;
+    margin-left: -127px;
+  }
+
+  .banniere4 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -390px;
+    margin-left: -127px;
+  }
+
+  .container-menu {
+    margin: -32px 152px 0 152px;
+  }
+
+  .title-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .liked2 {
+    padding-left: 120px;
+  }
+
+  .menu-category {
+    width: 634px;
+    height: 270px;
+    padding-left: 267px;
+    margin: 40px;
+  }
+
+  .menu-category-title {
+    margin-bottom: 20px;
+  }
+
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 50px;
+    margin-left: 515px;
+  }
+}
