@@ -251,14 +251,14 @@ body {
 .menu-liked--outline {
   position: absolute;
   margin-top: -75px;
-  margin-right: -75px;
+  margin-right: -235px;
   font-size: 22px;
 }
 
 .menu-liked--solid {
   font-size: 22px;
   margin-top: -75px;
-  margin-right: -75px;
+  margin-right: -235px;
   background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
