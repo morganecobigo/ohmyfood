@@ -251,15 +251,15 @@ body {
 .menu-liked--outline {
   position: absolute;
   margin-top: -75px;
-  margin-right: -215px;
+  margin-right: -75px;
   font-size: 22px;
 }
 
 .menu-liked--solid {
   font-size: 22px;
   margin-top: -75px;
-  margin-right: -215px;
-  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  margin-right: -75px;
+  background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
@@ -314,7 +314,7 @@ body {
 /****** Medias Queries homepage ***********/
 
 /* big devices (desktop) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .header {
     display: flex;
     justify-content: center;
@@ -331,7 +331,7 @@ body {
     align-items: center;
   }
 
-  .fonction {
+  .function {
     padding: 50px 180px 50px 50px;
   }
 
@@ -421,16 +421,59 @@ body {
     margin-left: -52px;
   }
 }
-@media screen and (max-width: 767px) {
-  .new {
-    margin-left: 604px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-button {
+    margin-left: 20px;
   }
+
+  .function {
+    padding: 40px 45px 40px 30px;
+  }
+
+  .tuto-title {
+    margin-left: 0;
+  }
+  .tuto-buttons {
+    display: inline;
+  }
+
+  .section-cards {
+    padding: 40px 80px 0 0;
+  }
+
+  .section-title {
+    margin-left: 25px;
+  }
+
+  .restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .card {
+    width: 100%;
+    margin: 30px;
+  }
+
+  .new {
+    margin-left: 605px;
+  }
+
   .card-img {
     object-fit: cover;
   }
 
   .liked {
-    width: 152%;
+    margin-left: 547px;
+  }
+  .logo-footer {
+    float: left;
+    margin-top: -26px;
+  }
+  .liens-footer {
+    padding-left: 0px;
+    text-align: center;
   }
 }
 
@@ -721,4 +764,7 @@ body {
     height: 50px;
     margin-left: 515px;
   }
+}
+
+@media screen and (max-width: 767px) {
 }
