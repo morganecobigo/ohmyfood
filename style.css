@@ -68,17 +68,17 @@ body {
   padding-top: 20px;
   padding-bottom: 50px;
 }
-.menu-title {
+.menu {
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+.menu-title {
   font-weight: 700;
   line-height: 28.13px;
   font-size: 24px;
 }
 
 .menu-subtitle {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
   height: 48px;
@@ -124,7 +124,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background: rgba(246, 246, 246, 1);
+  background: #f8f9f9;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
   margin: 20px;
 }
@@ -145,12 +145,14 @@ body {
   margin-top: 4px;
   padding: 0 20px 0 20px;
 }
-.tuto-icon {
-  color: #7e7e7e;
+
+.tuto {
   margin: 0;
 }
+.tuto-icon {
+  color: #7e7e7e;
+}
 .tuto-color {
-  margin: 0;
   color: rgba(147, 86, 220, 1);
 }
 
@@ -159,7 +161,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   padding: 20px;
-  margin: 0;
 }
 
 .section-title {
@@ -205,7 +206,6 @@ body {
   color: #2c9c81;
   margin-left: 197px;
 }
-
 .card-img {
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -213,9 +213,6 @@ body {
 }
 
 .img-card {
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 182px;
   object-fit: cover;
 }
 
@@ -223,21 +220,22 @@ body {
   margin-bottom: -22px;
 }
 
-.card-title {
+.cards {
   font-family: "Roboto", sans-serif;
+  padding-left: 13px;
+}
+
+.card-title {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: -12px;
-  padding-left: 13px;
   margin-top: 10px;
 }
 
 .card-subtitle {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 17px;
   line-height: 19.92px;
-  padding-left: 13px;
   padding-bottom: 15px;
 }
 
@@ -248,17 +246,17 @@ body {
   cursor: pointer;
 }
 
-.menu-liked--outline {
-  position: absolute;
+.like {
+  font-size: 22px;
   margin-top: -75px;
   margin-right: -235px;
-  font-size: 22px;
+}
+
+.menu-liked--outline {
+  position: absolute;
 }
 
 .menu-liked--solid {
-  font-size: 22px;
-  margin-top: -75px;
-  margin-right: -235px;
   background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -297,18 +295,18 @@ body {
   padding-left: 3px;
 }
 
-.liens {
+.second-lien {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
   line-height: 18.75px;
 }
 
+.liens {
+  font-weight: 500;
+}
+
 .lien {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18.75px;
 }
 
 /****** Medias Queries homepage ***********/
