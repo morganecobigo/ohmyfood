@@ -28,50 +28,6 @@ body {
   display: inline-block;
 }
 
-@keyframes lol {
-  0% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-
-  33% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  66% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(300px);
-  }
-}
-
-@-webkit-keyframes lol {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-300px);
-  }
-
-  33% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-
-  66% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(300px);
-  }
-}
-
 .cs-loader-inner label:nth-child(6) {
   -webkit-animation: lol 3s infinite ease-in-out;
   animation: lol 3s infinite ease-in-out;
