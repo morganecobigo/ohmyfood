@@ -14,17 +14,21 @@ body {
 /****** loader ***********/
 
 .cs-loader {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
 }
 
 .cs-loader-inner {
   transform: translateY(-50%);
   top: 50%;
-  position: absolute;
+  position: relative;
   width: calc(100% - 200px);
   color: #2c9c81;
   padding: 0 100px;
@@ -35,6 +39,50 @@ body {
   font-size: 20px;
   opacity: 0;
   display: inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
 }
 
 .cs-loader-inner label:nth-child(6) {
@@ -362,6 +410,13 @@ body {
 
 .lien {
   font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /****** Medias Queries homepage ***********/
