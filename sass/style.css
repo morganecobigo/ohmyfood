@@ -1,18 +1,9 @@
-/****** General ***********/
-
-* {
-  font-family: "Shrikhand", serif;
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   margin: 0;
 }
 
 /****** mobile first ***********/
-
 /****** loader ***********/
-
 .cs-loader {
   position: absolute;
   top: 0;
@@ -34,8 +25,7 @@ body {
   padding: 0 100px;
   text-align: center;
 }
-
-.cs-loader-inner label {
+.cs-loader-inner_label {
   font-size: 20px;
   opacity: 0;
   display: inline-block;
@@ -46,79 +36,66 @@ body {
     opacity: 0;
     transform: translateX(-300px);
   }
-
   33% {
     opacity: 1;
     transform: translateX(0px);
   }
-
   66% {
     opacity: 1;
     transform: translateX(0px);
   }
-
   100% {
     opacity: 0;
     transform: translateX(300px);
   }
 }
-
-@-webkit-keyframes lol {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-300px);
-  }
-
-  33% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-
-  66% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(300px);
-  }
-}
-
 .cs-loader-inner label:nth-child(6) {
-  -webkit-animation: lol 3s infinite ease-in-out;
   animation: lol 3s infinite ease-in-out;
 }
 
 .cs-loader-inner label:nth-child(5) {
-  -webkit-animation: lol 3s 100ms infinite ease-in-out;
   animation: lol 3s 100ms infinite ease-in-out;
 }
 
 .cs-loader-inner label:nth-child(4) {
-  -webkit-animation: lol 3s 200ms infinite ease-in-out;
   animation: lol 3s 200ms infinite ease-in-out;
 }
 
 .cs-loader-inner label:nth-child(3) {
-  -webkit-animation: lol 3s 300ms infinite ease-in-out;
   animation: lol 3s 300ms infinite ease-in-out;
 }
 
 .cs-loader-inner label:nth-child(2) {
-  -webkit-animation: lol 3s 400ms infinite ease-in-out;
   animation: lol 3s 400ms infinite ease-in-out;
 }
 
 .cs-loader-inner label:nth-child(1) {
-  -webkit-animation: lol 3s 500ms infinite ease-in-out;
   animation: lol 3s 500ms infinite ease-in-out;
 }
+
 /****** Header ***********/
 .header {
   height: 63px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header_img {
+  width: 197px;
+  height: 36px;
+  padding-left: 60px;
+  padding-top: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .header_img {
+    padding-left: 0;
+  }
 }
 
 .title-logo {
@@ -128,15 +105,7 @@ body {
   display: none;
 }
 
-.header img {
-  width: 197px;
-  height: 36px;
-  padding-left: 60px;
-  padding-top: 14px;
-}
-
 /****** localisation ***********/
-
 .input-container {
   display: flex;
   justify-content: center;
@@ -148,6 +117,7 @@ body {
   margin-left: -0.5px;
   margin-top: 3.5px;
 }
+
 .local-input-container {
   display: flex;
   justify-content: center;
@@ -158,30 +128,36 @@ body {
 .local-text {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 16;
   border: none;
-  background: rgba(234, 234, 234, 1);
+  background: rgb(234, 234, 234);
 }
 
 /****** decouverte menu ***********/
-
 .menu-choice {
   background: #f8f9f9;
   margin-left: -8.5px;
   padding-top: 20px;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 1024px) {
+  .menu-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .menu {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.menu-title {
+.menu_title {
   font-weight: 700;
   line-height: 28.13px;
   font-size: 24px;
 }
-
-.menu-subtitle {
+.menu_subtitle {
   font-weight: 300;
   font-size: 18px;
   height: 48px;
@@ -191,8 +167,8 @@ body {
 .text-button {
   display: inline-block;
   font-weight: 500;
-  font-size: 16px;
-  color: white;
+  font-size: 16;
+  color: #FFF;
   padding: 13px;
   border-radius: 32px;
   border: none;
@@ -203,13 +179,27 @@ body {
   margin-left: 70px;
   text-decoration: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-button {
+    margin-left: 20px;
+  }
+}
 
 .text-button:hover {
   opacity: 0.83;
 }
 
 /****** fonctionnement ***********/
-
+@media screen and (min-width: 1024px) {
+  .function {
+    padding: 50px 180px 50px 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .function {
+    padding: 40px 45px 40px 30px;
+  }
+}
 .tuto-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -217,9 +207,32 @@ body {
   padding-left: 20px;
   margin-top: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .tuto-title {
+    margin-left: 135px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tuto-title {
+    margin-left: 0;
+  }
+}
 
 .tuto-buttons {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .tuto-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 88px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tuto-buttons {
+    display: inline;
+  }
 }
 
 .tuto-button {
@@ -231,15 +244,28 @@ body {
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
   margin: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .tuto-button {
+    height: 72.5px;
+    padding-right: 50px;
+  }
+}
+
 .tuto-number {
   background: #9356dc;
-  color: white;
+  color: #FFF;
   width: 24px;
   height: 24px;
   border-radius: 50px;
   position: absolute;
   margin-left: -100%;
 }
+@media screen and (min-width: 1024px) {
+  .tuto-number {
+    margin-right: -47px;
+  }
+}
+
 .number {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -252,18 +278,33 @@ body {
 .tuto {
   margin: 0;
 }
-.tuto-icon {
+.tuto_icon {
   color: #7e7e7e;
 }
-.tuto-color {
-  color: rgba(147, 86, 220, 1);
+@media screen and (min-width: 1024px) {
+  .tuto_icon {
+    padding-right: 14px;
+    margin: 0 0 0 30px;
+  }
 }
-
-.tuto-text {
+.tuto_color {
+  color: #9356dc;
+}
+@media screen and (min-width: 1024px) {
+  .tuto_color {
+    margin: 0 20px 0 25px;
+  }
+}
+.tuto_text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16;
   padding: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .tuto_text {
+    margin-left: -20px;
+  }
 }
 
 .section-title {
@@ -271,9 +312,19 @@ body {
   font-weight: 700;
   font-size: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .section-title {
+    margin-left: 65px;
+    margin-top: -22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-title {
+    margin-left: 25px;
+  }
+}
 
 /****** restaurants ***********/
-
 .section-cards {
   background-color: #f8f9f9;
   width: 90%;
@@ -281,21 +332,57 @@ body {
   padding-top: 20px;
   padding-left: 18px;
 }
+@media screen and (min-width: 1024px) {
+  .section-cards {
+    padding: 50px 180px 50px 130px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-cards {
+    padding: 40px 80px 0 0;
+  }
+}
 
 .restaurants-cards {
   margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 }
 
 .card {
   margin-bottom: 15px;
   border-radius: 15px;
-  background-color: white;
+  background-color: #FFF;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 50px;
+    width: 490px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 100%;
+    margin: 30px;
+  }
 }
 
 .lien-card {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .new {
@@ -309,14 +396,44 @@ body {
   color: #2c9c81;
   margin-left: 197px;
 }
+@media screen and (min-width: 1024px) {
+  .new {
+    margin: 10px 0 0 400px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .new {
+    margin-left: 605px;
+  }
+}
+
 .card-img {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 182px;
 }
+@media screen and (min-width: 1024px) {
+  .card-img {
+    height: 231px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .img-card {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .img-card {
+    height: 231px;
+  }
 }
 
 .card-txt {
@@ -334,8 +451,7 @@ body {
   margin-bottom: -12px;
   margin-top: 10px;
 }
-
-.card-subtitle {
+.card-title_subtitle {
   font-weight: 300;
   font-size: 17px;
   line-height: 19.92px;
@@ -347,6 +463,16 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .liked {
+    margin-left: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .liked {
+    margin-left: 547px;
+  }
 }
 
 .like {
@@ -362,45 +488,78 @@ body {
 .menu-liked--solid {
   background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
 }
+
 .liked:hover .menu-liked--outline {
   opacity: 0;
 }
+
 .liked:hover .menu-liked--solid {
   opacity: 1;
 }
 
 .menu-liked--outline:before {
-  background-color: white;
+  background-color: #FFF;
 }
 
 /****** footer ***********/
-
 .footer {
   width: 100%;
-  background-color: rgba(53, 53, 53, 1);
+  background-color: rgb(53, 53, 53);
 }
 
 .container-list {
   padding: 22px 25px 22px 25px;
+}
+@media screen and (min-width: 1024px) {
+  .container-list {
+    padding: 50px 0 25px 50px;
+  }
 }
 
 .logo-footer {
   width: 139px;
   filter: invert(1);
 }
+@media screen and (min-width: 1024px) {
+  .logo-footer {
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo-footer {
+    float: left;
+    margin-top: -26px;
+  }
+}
 
 .liens-footer {
-  color: white;
+  color: #FFF;
   list-style: none;
   padding-left: 3px;
+}
+@media screen and (min-width: 1024px) {
+  .liens-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    padding-left: 515px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .liens-footer {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 
 .second-lien {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 16;
   line-height: 18.75px;
 }
 
@@ -419,219 +578,98 @@ a {
   transition: all 0.3s ease;
 }
 
-/****** Medias Queries homepage ***********/
-
-/* big devices (desktop) */
-@media screen and (min-width: 1024px) {
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header img {
-    padding-left: 0;
-  }
-
-  .menu-choice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .function {
-    padding: 50px 180px 50px 50px;
-  }
-
-  .tuto-title {
-    margin-left: 135px;
-  }
-
-  .tuto-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 88px;
-  }
-
-  .tuto-button {
-    height: 72.5px;
-    padding-right: 50px;
-  }
-
-  .tuto-number {
-    margin-right: -47px;
-  }
-
-  .tuto-icon {
-    padding-right: 14px;
-    margin: 0 0 0 30px;
-  }
-
-  .tuto-color {
-    margin: 0 20px 0 25px;
-  }
-
-  .tuto-text {
-    margin-left: -20px;
-  }
-
-  .section-title {
-    margin-left: 65px;
-    margin-top: -22px;
-  }
-
-  .section-cards {
-    padding: 50px 180px 50px 130px;
-  }
-
-  .restaurants-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 0fr);
-  }
-  .card {
-    margin: 50px;
-    width: 490px;
-  }
-
-  .new {
-    margin: 10px 0 0 400px;
-  }
-
-  .card-img {
-    height: 231px;
-    object-fit: cover;
-  }
-
-  .img-card {
-    height: 231px;
-  }
-
-  .liked {
-    margin-left: 200px;
-  }
-
-  .container-list {
-    padding: 50px 0 25px 50px;
-  }
-  .logo-footer {
-    float: right;
-    margin-top: 30px;
-    margin-right: 80px;
-  }
-
-  .liens-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 190px);
-    padding-left: 515px;
-  }
-  .lien2 {
-    margin-left: -52px;
-    padding-top: 16px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .text-button {
-    margin-left: 20px;
-  }
-
-  .function {
-    padding: 40px 45px 40px 30px;
-  }
-
-  .tuto-title {
-    margin-left: 0;
-  }
-  .tuto-buttons {
-    display: inline;
-  }
-  .section-title {
-    margin-left: 25px;
-  }
-  .section-cards {
-    padding: 40px 80px 0 0;
-  }
-
-  .restaurants-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-  .card {
-    width: 100%;
-    margin: 30px;
-  }
-
-  .new {
-    margin-left: 605px;
-  }
-
-  .card-img {
-    object-fit: cover;
-  }
-
-  .liked {
-    margin-left: 547px;
-  }
-  .logo-footer {
-    float: left;
-    margin-top: -26px;
-  }
-  .liens-footer {
-    padding-left: 0px;
-    text-align: center;
-  }
+.lien2 {
+  margin-left: -52px;
+  padding-top: 16px;
 }
 
 /****** Pages menus ***********/
-
 .header-button {
   position: absolute;
   padding-top: 17px;
   padding-left: 17px;
   font-size: 20px;
 }
+@media (min-width: 768px) {
+  .header-button {
+    margin-left: -620px;
+  }
+}
 
 .header-arrow {
   color: black;
 }
 
-.banniere1 {
+.banniere_1 {
   background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
-
-.banniere2 {
+@media (min-width: 768px) {
+  .banniere_1 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -256px;
+    margin-left: -127px;
+  }
+}
+.banniere_2 {
   background-image: url("assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: right;
 }
-.banniere3 {
+@media (min-width: 768px) {
+  .banniere_2 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -256px;
+    margin-left: -127px;
+  }
+}
+.banniere_3 {
   background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
-
-.banniere4 {
+@media (min-width: 768px) {
+  .banniere_3 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -256px;
+    margin-left: -127px;
+  }
+}
+.banniere_4 {
   background-image: url("assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
+@media (min-width: 768px) {
+  .banniere_4 {
+    width: 1440px;
+    height: 588px;
+    margin-top: -256px;
+    margin-left: -127px;
+  }
+}
 
 .container-menu {
   border-top-right-radius: 32px;
   border-top-left-radius: 32px;
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgb(246, 246, 246);
   padding-top: 15px;
   padding-bottom: 40px;
   position: relative;
   margin-top: -49px;
+}
+@media (min-width: 768px) {
+  .container-menu {
+    margin: -32px 152px 0 152px;
+  }
 }
 
 .title-menu {
@@ -643,6 +681,13 @@ a {
   margin: 15px 0 15px 0;
   padding-left: 10px;
 }
+@media (min-width: 768px) {
+  .title-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .liked2 {
   display: flex;
@@ -650,6 +695,11 @@ a {
   align-items: center;
   cursor: pointer;
   padding-left: 50px;
+}
+@media (min-width: 768px) {
+  .liked2 {
+    padding-left: 120px;
+  }
 }
 
 .menu-liked--outline1 {
@@ -665,25 +715,49 @@ a {
   margin-right: -215px;
   background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
 }
+
 .liked2:hover .menu-liked--outline1 {
   opacity: 0;
 }
+
 .liked2:hover .menu-liked--solid2 {
   opacity: 1;
 }
 
 .menu-liked--outline1:before {
-  background-color: white;
+  background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .menu-category {
+    width: 634px;
+    height: 270px;
+    padding-left: 267px;
+    margin: 40px;
+  }
+}
+.menu-category4 {
+  width: 634px;
+  height: 270px;
+  padding-left: 267px;
+  margin: 40px;
+  padding-top: 57px;
 }
 
 .menu-category-title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 16;
   margin-left: 13px;
+}
+@media (min-width: 768px) {
+  .menu-category-title {
+    margin-bottom: 20px;
+  }
 }
 
 .entries:after {
@@ -715,28 +789,24 @@ a {
   margin-left: -74px;
   margin-top: 27px;
 }
-.click-button {
-  color: #89c8fa;
-  opacity: 1;
-}
+
 .dish-category {
   width: 80%;
   overflow: hidden;
   display: flex;
   border-radius: 15.04px;
-  background-color: white;
+  background-color: #FFF;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
   padding-left: 30px;
   margin-top: 17px;
   margin-left: 13px;
 }
-.dish-category-container {
+.dish-category_container {
   width: 100%;
   padding-bottom: 15px;
   white-space: nowrap;
 }
-
-.dish-category-title {
+.dish-category_title {
   flex: 1;
   margin-left: -20px;
 }
@@ -744,7 +814,7 @@ a {
 .dish-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16;
   line-height: 21.09px;
   margin-bottom: -10px;
   margin-top: 10px;
@@ -786,14 +856,14 @@ a {
 
 .fa-circle-check {
   padding: 25px 25px 25px 20px;
-  color: white;
+  color: #FFF;
 }
 
 .menu-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  color: white;
+  font-size: 16;
+  color: #FFF;
   padding: 13px;
   border-radius: 25px;
   border: none;
@@ -804,80 +874,7 @@ a {
   width: 60%;
   margin-left: 65px;
 }
-
-.menu-btn:hover {
-  opacity: 0.83;
-}
-
-/****** Medias Queries ***********/
-
-/* big devices (desktop, less/equal than 1440px) */
 @media (min-width: 768px) {
-  .header-button {
-    margin-left: -620px;
-  }
-
-  .banniere1 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -256px;
-    margin-left: -127px;
-  }
-
-  .banniere2 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -390px;
-    margin-left: -127px;
-  }
-
-  .banniere3 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -390px;
-    margin-left: -127px;
-  }
-
-  .banniere4 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -390px;
-    margin-left: -127px;
-  }
-
-  .container-menu {
-    margin: -32px 152px 0 152px;
-  }
-
-  .title-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .liked2 {
-    padding-left: 120px;
-  }
-
-  .menu-category {
-    width: 634px;
-    height: 270px;
-    padding-left: 267px;
-    margin: 40px;
-  }
-
-  .menu-category4 {
-    width: 634px;
-    height: 270px;
-    padding-left: 267px;
-    margin: 40px;
-    padding-top: 57px;
-  }
-
-  .menu-category-title {
-    margin-bottom: 20px;
-  }
-
   .menu-btn {
     display: flex;
     justify-content: center;
@@ -886,6 +883,10 @@ a {
     height: 50px;
     margin-left: 515px;
   }
+}
+
+.menu-btn:hover {
+  opacity: 0.83;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -939,4 +940,4 @@ a {
   .liens-footer {
     text-align: left;
   }
-}
+}/*# sourceMappingURL=style.css.map */
