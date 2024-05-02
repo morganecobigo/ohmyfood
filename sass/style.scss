@@ -115,25 +115,14 @@ body {
     height: 63px;
     background-color: $background-color;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
-
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &_img {
         width: 197px;
         height: 36px;
-        padding-left: 60px;
-        padding-top: 14px;
-
-        @media screen and (min-width: 1024px) {
-            padding-left: 0;
-        }
     }
-
-
 }
 
 .title-logo {
@@ -205,6 +194,13 @@ body {
     }
 }
 
+.text-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .text-button {
     display: inline-block;
     font-weight: 500;
@@ -216,8 +212,6 @@ body {
     background: linear-gradient(0deg, $primary-color, $secondary-color);
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     cursor: pointer;
-    margin-top: 30px;
-    margin-left: 70px;
     text-decoration: none;
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -280,7 +274,8 @@ body {
     border-radius: 20px;
     background: $font-color;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-    margin: 20px;
+    margin: 20px 30px;
+    height: 72.5px;
 
     @media screen and (min-width: 1024px) {
         height: 72.5px;
@@ -311,37 +306,39 @@ body {
     padding: 0 20px 0 20px;
 }
 
+
 .tuto {
     margin: 0;
+}
 
-    &_icon {
-        color: #7e7e7e;
+.tuto-icon {
+    color: #7e7e7e;
 
-        @media screen and (min-width: 1024px) {
-            padding-right: 14px;
-            margin: 0 0 0 30px;
-        }
-    }
-
-    &_color {
-        color: $primary-color;
-
-        @media screen and (min-width: 1024px) {
-            margin: 0 20px 0 25px;
-        }
-    }
-
-    &_text {
-        font-family: $font-stack;
-        font-weight: 500;
-        font-size: $base-font-size;
-        padding: 20px;
-
-        @media screen and (min-width: 1024px) {
-            margin-left: -20px;
-        }
+    @media screen and (min-width: 1024px) {
+        padding-right: 14px;
+        margin: 0 0 0 30px;
     }
 }
+
+.tuto-color {
+    color: rgba(147, 86, 220, 1);
+
+    @media screen and (min-width: 1024px) {
+        margin: 0 12px 0 25px;
+    }
+}
+
+.tuto-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: -20px;
+    }
+}
+
 
 .section-title {
     font-family: $font-stack;
@@ -374,7 +371,6 @@ body {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
         padding: 40px 80px 0 0;
     }
-
 }
 
 .restaurants-cards {
@@ -413,6 +409,9 @@ body {
 .lien-card {
     text-decoration: none;
     color: $black;
+    display: block;
+    height: 251px;
+    position: relative;
 }
 
 .new {
@@ -422,26 +421,20 @@ body {
     position: absolute;
     border-radius: 2px;
     padding: 10px;
+    top: 10px;
+    right: 10px;
     background-color: $tertiary-color;
     color: $font-new;
-    margin-left: 197px;
+    margin: 0;
 
-    @media screen and (min-width: 1024px) {
-        margin: 10px 0 0 400px;
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        margin-left: 605px;
-    }
 }
 
 .card-img {
     border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 182px;
+    height: 174px;
 
     @media screen and (min-width: 1024px) {
-        height: 231px;
         object-fit: cover;
     }
 
@@ -452,14 +445,6 @@ body {
 
 .img-card {
     object-fit: cover;
-
-    @media screen and (min-width: 1024px) {
-        height: 231px;
-    }
-}
-
-.card-txt {
-    margin-bottom: -22px;
 }
 
 .cards {
@@ -486,6 +471,9 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: absolute;
+    padding-left: 220px;
+
 
     @media screen and (min-width: 1024px) {
         margin-left: 200px;
@@ -499,11 +487,16 @@ body {
 .like {
     font-size: 22px;
     margin-top: -75px;
-    margin-right: -235px;
+    margin-right: -68px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-left: -314px;
+    }
 }
 
 .menu-liked--outline {
     position: absolute;
+    transition: 2s;
 }
 
 .menu-liked--solid {
@@ -511,6 +504,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 500ms ease-in-out;
+    opacity: 0;
 }
 
 .liked:hover .menu-liked--outline {
@@ -519,10 +513,6 @@ body {
 
 .liked:hover .menu-liked--solid {
     opacity: 1;
-}
-
-.menu-liked--outline:before {
-    background-color: $white;
 }
 
 /****** footer ***********/
@@ -538,7 +528,6 @@ body {
     @media screen and (min-width: 1024px) {
         padding: 50px 0 25px 50px;
     }
-
 }
 
 .logo-footer {
@@ -588,7 +577,12 @@ body {
     font-weight: 400;
 }
 
-
+@media screen and (min-width: 1024px) {
+    .lien2 {
+        padding-top: 15px;
+        margin-left: -45px;
+    }
+}
 
 a {
     color: inherit;
@@ -597,11 +591,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
-.lien2 {
-    margin-left: -52px;
-    padding-top: 16px;
-}
 
 
 /****** Pages menus ***********/
@@ -678,7 +667,6 @@ a {
         }
     }
 }
-
 
 .container-menu {
     border-top-right-radius: 32px;
@@ -832,10 +820,6 @@ a {
     }
 }
 
-
-
-
-
 .dish-title {
     font-family: $font-stack;
     font-weight: 500;
@@ -863,7 +847,6 @@ a {
     margin-right: 10px;
     margin-top: -20px;
 }
-
 
 .check {
     transition: 1s;
@@ -910,7 +893,6 @@ a {
     }
 }
 
-
 .menu-btn:hover {
     opacity: 0.83;
 }
@@ -921,7 +903,6 @@ a {
     }
 
     .header img {
-        padding-left: 280px;
         padding-top: 0;
     }
 

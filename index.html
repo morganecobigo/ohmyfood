@@ -30,8 +30,11 @@
     </div-->
     <!-- Header -->
     <header class="header">
-      <img src="assets/images/logo/ohmyfood.png" alt="logoohmyfood" />
-      <h1 class="title-logo">ohmyfood</h1>
+      <img
+        src="assets/images/logo/ohmyfood.png"
+        alt="logoohmyfood"
+        class="header_img"
+      />
     </header>
     <!-- Mon code recherche -->
     <main>
@@ -52,9 +55,11 @@
         <p class="menu menu-subtitle">
           Découvrez des restaurants d'exceptions, sélectionnez par nos soins.
         </p>
-        <a href="#restaurants" class="menu text-button"
-          >Explorer nos restaurants</a
-        >
+        <div class="text-button-container">
+          <a href="#restaurants" class="menu text-button"
+            >Explorer nos restaurants</a
+          >
+        </div>
       </section>
       <!-- Mon code fonctionnement -->
       <div>
@@ -97,15 +102,16 @@
                 src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="Image La palette du goût"
               />
+
               <div class="card-txt">
                 <h4 class="cards card-title">La palette du goût</h4>
                 <p class="cards card-subtitle">Ménilmontant</p>
               </div>
+              <div class="liked">
+                <i class="fa-regular fa-heart like menu-liked--outline"></i>
+                <i class="fa-solid fa-heart like menu-liked--solid"></i>
+              </div>
             </a>
-            <div class="liked">
-              <i class="fa-regular fa-heart like menu-liked--outline"></i>
-              <i class="fa-solid fa-heart like menu-liked--solid"></i>
-            </div>
           </div>
 
           <div class="card">
