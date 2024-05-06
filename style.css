@@ -889,48 +889,56 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-arrow {
-    margin: 618px;
-  }
-  .header img {
-    padding-top: 0;
+  .header-img {
+    padding-left: 247px;
   }
   .banniere_1 {
     width: 100%;
     height: 305px;
     margin-top: -175px;
+    margin-left: -107px;
   }
   .banniere_2 {
     width: 100%;
     height: 305px;
     margin-top: -175px;
+    margin-left: -107px;
   }
   .banniere_3 {
     width: 100%;
     height: 305px;
     margin-top: -175px;
+    margin-left: -107px;
   }
   .banniere_4 {
     width: 100%;
     height: 305px;
     margin-top: -175px;
+    margin-left: -107px;
   }
   .container-menu {
     margin: 56px;
     margin-top: -50px;
     margin-bottom: 0;
   }
+  .title-menu {
+    padding-left: 160px;
+  }
   .menu-category {
-    padding-left: 0;
     margin: 28px;
   }
   .menu-category4 {
-    padding-left: 0;
     margin: 30px;
     padding-top: 57px;
   }
+  .menu-category-title {
+    margin-left: 40px;
+  }
+  .dish-category {
+    margin-left: 40px;
+  }
   .menu-btn {
-    margin-left: 257px;
+    margin-left: 137px;
   }
   .container-list {
     padding: 50px 25px 22px 25px;

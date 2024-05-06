@@ -600,14 +600,14 @@ a {
     }
 }
 
-.header-arrow {
-    color: black;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-img {
+        padding-left: 247px;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .header img {
-        padding-top: 0;
-    }
+.header-arrow {
+    color: black;
 }
 
 .banniere {
@@ -625,13 +625,14 @@ a {
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            .banniere_1 {
-                width: 100%;
-                height: 305px;
-                margin-top: -175px;
-            }
+
+            width: 100%;
+            height: 305px;
+            margin-top: -175px;
+            margin-left: -107px;
         }
     }
+
 
     &_2 {
         background-image: url("assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
@@ -647,13 +648,14 @@ a {
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            .banniere_2 {
-                width: 100%;
-                height: 305px;
-                margin-top: -175px;
-            }
+
+            width: 100%;
+            height: 305px;
+            margin-top: -175px;
+            margin-left: -107px;
         }
     }
+
 
     &_3 {
         background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
@@ -669,11 +671,11 @@ a {
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            .banniere_3 {
-                width: 100%;
-                height: 305px;
-                margin-top: -175px;
-            }
+
+            width: 100%;
+            height: 305px;
+            margin-top: -175px;
+            margin-left: -107px;
         }
     }
 
@@ -689,13 +691,14 @@ a {
             margin-top: -256px;
             margin-left: -127px;
         }
-    }
 
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .banniere_4 {
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
             width: 100%;
             height: 305px;
             margin-top: -175px;
+            margin-left: -107px;
         }
     }
 }
@@ -714,11 +717,11 @@ a {
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .container-menu {
-            margin: 56px;
-            margin-top: -50px;
-            margin-bottom: 0;
-        }
+
+        margin: 56px;
+        margin-top: -50px;
+        margin-bottom: 0;
+
     }
 }
 
@@ -735,6 +738,10 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        padding-left: 160px;
     }
 }
 
@@ -790,7 +797,6 @@ a {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .menu-category {
-        padding-left: 0;
         margin: 28px;
     }
 }
@@ -803,11 +809,11 @@ a {
     padding-top: 57px;
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .menu-category4 {
-            padding-left: 0;
-            margin: 30px;
-            padding-top: 57px;
-        }
+
+        padding-left: 0;
+        margin: 30px;
+        padding-top: 57px;
+
     }
 }
 
@@ -819,6 +825,10 @@ a {
 
     @media screen and (min-width: 1024px) {
         margin-bottom: 20px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 40px;
     }
 }
 
@@ -852,6 +862,11 @@ a {
     margin-top: 27px;
 }
 
+.click-button {
+    color: #89c8fa;
+    opacity: 1;
+}
+
 .dish-category {
     width: 80%;
     overflow: hidden;
@@ -863,17 +878,22 @@ a {
     margin-top: 17px;
     margin-left: 13px;
 
-    &_container {
-        width: 100%;
-        padding-bottom: 15px;
-        white-space: nowrap;
-    }
-
-    &_title {
-        flex: 1;
-        margin-left: -20px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 40px;
     }
 }
+
+.dish-category-container {
+    width: 100%;
+    padding-bottom: 15px;
+    white-space: nowrap;
+}
+
+.dish-category-title {
+    flex: 1;
+    margin-left: -20px;
+}
+
 
 .dish-title {
     font-family: $font-stack;
@@ -948,9 +968,9 @@ a {
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .menu-btn {
-            margin-left: 257px;
-        }
+
+        margin-left: 137px;
+
     }
 }
 
