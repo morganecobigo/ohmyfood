@@ -274,7 +274,7 @@ body {
     border-radius: 20px;
     background: $font-color;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-    margin: 20px 30px;
+    margin: 20px;
     height: 72.5px;
 
     @media screen and (min-width: 1024px) {
@@ -305,7 +305,6 @@ body {
     margin-top: 4px;
     padding: 0 20px 0 20px;
 }
-
 
 .tuto {
     margin: 0;
@@ -338,7 +337,6 @@ body {
         margin-left: -20px;
     }
 }
-
 
 .section-title {
     font-family: $font-stack;
@@ -426,7 +424,6 @@ body {
     background-color: $tertiary-color;
     color: $font-new;
     margin: 0;
-
 }
 
 .card-img {
@@ -473,7 +470,6 @@ body {
     cursor: pointer;
     position: absolute;
     padding-left: 220px;
-
 
     @media screen and (min-width: 1024px) {
         margin-left: 200px;
@@ -591,8 +587,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
-
 /****** Pages menus ***********/
 
 .header-button {
@@ -601,13 +595,19 @@ a {
     padding-left: 17px;
     font-size: 20px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         margin-left: -620px;
     }
 }
 
 .header-arrow {
     color: black;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header img {
+        padding-top: 0;
+    }
 }
 
 .banniere {
@@ -617,11 +617,19 @@ a {
         background-size: cover;
         background-position: left top;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
             width: 1440px;
             height: 588px;
             margin-top: -256px;
             margin-left: -127px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .banniere_1 {
+                width: 100%;
+                height: 305px;
+                margin-top: -175px;
+            }
         }
     }
 
@@ -631,11 +639,19 @@ a {
         background-size: cover;
         background-position: right;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
             width: 1440px;
             height: 588px;
             margin-top: -256px;
             margin-left: -127px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .banniere_2 {
+                width: 100%;
+                height: 305px;
+                margin-top: -175px;
+            }
         }
     }
 
@@ -645,11 +661,19 @@ a {
         background-size: cover;
         background-position: left top;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
             width: 1440px;
             height: 588px;
             margin-top: -256px;
             margin-left: -127px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .banniere_3 {
+                width: 100%;
+                height: 305px;
+                margin-top: -175px;
+            }
         }
     }
 
@@ -659,11 +683,19 @@ a {
         background-size: cover;
         background-position: left top;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
             width: 1440px;
             height: 588px;
             margin-top: -256px;
             margin-left: -127px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .banniere_4 {
+            width: 100%;
+            height: 305px;
+            margin-top: -175px;
         }
     }
 }
@@ -677,8 +709,16 @@ a {
     position: relative;
     margin-top: -49px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         margin: -32px 152px 0 152px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .container-menu {
+            margin: 56px;
+            margin-top: -50px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -691,7 +731,7 @@ a {
     margin: 15px 0 15px 0;
     padding-left: 10px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -705,7 +745,7 @@ a {
     cursor: pointer;
     padding-left: 50px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         padding-left: 120px;
     }
 }
@@ -739,12 +779,19 @@ a {
     background-color: $white;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .menu-category {
         width: 634px;
         height: 270px;
         padding-left: 267px;
         margin: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .menu-category {
+        padding-left: 0;
+        margin: 28px;
     }
 }
 
@@ -754,6 +801,14 @@ a {
     padding-left: 267px;
     margin: 40px;
     padding-top: 57px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .menu-category4 {
+            padding-left: 0;
+            margin: 30px;
+            padding-top: 57px;
+        }
+    }
 }
 
 .menu-category-title {
@@ -762,7 +817,7 @@ a {
     font-size: $base-font-size;
     margin-left: 13px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         margin-bottom: 20px;
     }
 }
@@ -883,13 +938,19 @@ a {
     width: 60%;
     margin-left: 65px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 186px;
         height: 50px;
         margin-left: 515px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .menu-btn {
+            margin-left: 257px;
+        }
     }
 }
 
@@ -898,63 +959,12 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .header-arrow {
-        margin: 618px;
-    }
-
-    .header img {
-        padding-top: 0;
-    }
-
-    .banniere1 {
-        width: 100%;
-        height: 305px;
-        margin-top: -175px;
-    }
-
-    .banniere2 {
-        width: 100%;
-        height: 305px;
-        margin-top: -175px;
-    }
-
-    .banniere3 {
-        width: 100%;
-        height: 305px;
-        margin-top: -175px;
-    }
-
-    .banniere4 {
-        width: 100%;
-        height: 305px;
-        margin-top: -175px;
-    }
-
-    .container-menu {
-        margin: 56px;
-        margin-top: -50px;
-        margin-bottom: 0;
-    }
-
-    .menu-category {
-        padding-left: 0;
-        margin: 28px;
-    }
-
-    .menu-category4 {
-        padding-left: 0;
-        margin: 30px;
-        padding-top: 57px;
-    }
-
-    .menu-btn {
-        margin-left: 257px;
-    }
-
     .container-list {
         padding: 50px 25px 22px 25px;
     }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .liens-footer {
         text-align: left;
     }

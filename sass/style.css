@@ -236,7 +236,7 @@ body {
   border-radius: 20px;
   background: #f8f9f9;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-  margin: 20px 30px;
+  margin: 20px;
   height: 72.5px;
 }
 @media screen and (min-width: 1024px) {
@@ -579,7 +579,7 @@ a {
   padding-left: 17px;
   font-size: 20px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .header-button {
     margin-left: -620px;
   }
@@ -589,18 +589,30 @@ a {
   color: black;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header img {
+    padding-top: 0;
+  }
+}
 .banniere_1 {
   background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   padding: 113px;
   background-size: cover;
   background-position: left top;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .banniere_1 {
     width: 1440px;
     height: 588px;
     margin-top: -256px;
     margin-left: -127px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banniere_1 .banniere_1 {
+    width: 100%;
+    height: 305px;
+    margin-top: -175px;
   }
 }
 .banniere_2 {
@@ -609,12 +621,19 @@ a {
   background-size: cover;
   background-position: right;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .banniere_2 {
     width: 1440px;
     height: 588px;
     margin-top: -256px;
     margin-left: -127px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banniere_2 .banniere_2 {
+    width: 100%;
+    height: 305px;
+    margin-top: -175px;
   }
 }
 .banniere_3 {
@@ -623,12 +642,19 @@ a {
   background-size: cover;
   background-position: left top;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .banniere_3 {
     width: 1440px;
     height: 588px;
     margin-top: -256px;
     margin-left: -127px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banniere_3 .banniere_3 {
+    width: 100%;
+    height: 305px;
+    margin-top: -175px;
   }
 }
 .banniere_4 {
@@ -637,12 +663,19 @@ a {
   background-size: cover;
   background-position: left top;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .banniere_4 {
     width: 1440px;
     height: 588px;
     margin-top: -256px;
     margin-left: -127px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banniere .banniere_4 {
+    width: 100%;
+    height: 305px;
+    margin-top: -175px;
   }
 }
 
@@ -655,9 +688,16 @@ a {
   position: relative;
   margin-top: -49px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container-menu {
     margin: -32px 152px 0 152px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-menu .container-menu {
+    margin: 56px;
+    margin-top: -50px;
+    margin-bottom: 0;
   }
 }
 
@@ -670,7 +710,7 @@ a {
   margin: 15px 0 15px 0;
   padding-left: 10px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .title-menu {
     display: flex;
     justify-content: center;
@@ -685,7 +725,7 @@ a {
   cursor: pointer;
   padding-left: 50px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .liked2 {
     padding-left: 120px;
   }
@@ -721,12 +761,18 @@ a {
   background-color: #FFF;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-category {
     width: 634px;
     height: 270px;
     padding-left: 267px;
     margin: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-category {
+    padding-left: 0;
+    margin: 28px;
   }
 }
 .menu-category4 {
@@ -736,6 +782,13 @@ a {
   margin: 40px;
   padding-top: 57px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-category4 .menu-category4 {
+    padding-left: 0;
+    margin: 30px;
+    padding-top: 57px;
+  }
+}
 
 .menu-category-title {
   font-family: "Roboto", sans-serif;
@@ -743,7 +796,7 @@ a {
   font-size: 16;
   margin-left: 13px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-category-title {
     margin-bottom: 20px;
   }
@@ -863,7 +916,7 @@ a {
   width: 60%;
   margin-left: 65px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-btn {
     display: flex;
     justify-content: center;
@@ -873,58 +926,22 @@ a {
     margin-left: 515px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-btn .menu-btn {
+    margin-left: 257px;
+  }
+}
 
 .menu-btn:hover {
   opacity: 0.83;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-arrow {
-    margin: 618px;
-  }
-  .header img {
-    padding-top: 0;
-  }
-  .banniere1 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-  }
-  .banniere2 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-  }
-  .banniere3 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-  }
-  .banniere4 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-  }
-  .container-menu {
-    margin: 56px;
-    margin-top: -50px;
-    margin-bottom: 0;
-  }
-  .menu-category {
-    padding-left: 0;
-    margin: 28px;
-  }
-  .menu-category4 {
-    padding-left: 0;
-    margin: 30px;
-    padding-top: 57px;
-  }
-  .menu-btn {
-    margin-left: 257px;
-  }
   .container-list {
     padding: 50px 25px 22px 25px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .liens-footer {
     text-align: left;
   }
