@@ -619,7 +619,7 @@ a {
   font-size: 22px;
   margin-top: -75px;
   margin-right: -215px;
-  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
