@@ -1,5 +1,5 @@
 @import "./variables";
-@import "./loader";
+
 
 body {
     margin: 0;
@@ -17,8 +17,18 @@ body {
     justify-content: center;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     z-index: 9999;
-    opacity: 0.80;
+    animation: 0s linear 2.3s forwards fadeout;
+    opacity: 0.8;
 }
+
+@keyframes fadeout {
+
+
+    to {
+        opacity: 0;
+    }
+}
+
 
 .cs-loader-inner {
     color: #2c9c81;

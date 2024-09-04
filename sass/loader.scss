@@ -9,7 +9,18 @@
     justify-content: center;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     z-index: 9999;
-    opacity: 0.8;
+
+    animation: fadeout 3s;
+}
+
+@keyframes fadeout {
+    from {
+        display: block;
+    }
+
+    to {
+        display: none;
+    }
 }
 
 .cs-loader-inner {
