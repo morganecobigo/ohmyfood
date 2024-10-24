@@ -1,9 +1,17 @@
+/****** General ***********/
+
+* {
+  font-family: "Shrikhand", serif;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
 }
 
 /****** mobile first ***********/
 /****** loader ***********/
+
 .cs-loader {
   position: absolute;
   height: 100%;
@@ -89,6 +97,7 @@ body {
 }
 
 /****** localisation ***********/
+
 .input-container {
   display: flex;
   justify-content: center;
@@ -111,36 +120,31 @@ body {
 .local-text {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 16;
+  font-size: 16px;
   border: none;
-  background: rgb(234, 234, 234);
+  background: rgba(234, 234, 234);
 }
 
 /****** decouverte menu ***********/
+
 .menu-choice {
   background: #f8f9f9;
   margin-left: -8.5px;
   padding-top: 20px;
   padding-bottom: 50px;
 }
-@media screen and (min-width: 1024px) {
-  .menu-choice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .menu {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.menu_title {
+.menu-title {
   font-weight: 700;
   line-height: 28.13px;
   font-size: 24px;
 }
-.menu_subtitle {
+
+.menu-subtitle {
   font-weight: 300;
   font-size: 18px;
   height: 48px;
@@ -158,7 +162,7 @@ body {
   display: inline-block;
   font-weight: 500;
   font-size: 16;
-  color: #FFF;
+  color: #fff;
   padding: 13px;
   border-radius: 32px;
   border: none;
@@ -167,27 +171,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .text-button {
-    margin-left: 20px;
-  }
-}
 
 .text-button:hover {
   opacity: 0.83;
 }
 
 /****** fonctionnement ***********/
-@media screen and (min-width: 1024px) {
-  .function {
-    padding: 50px 180px 50px 50px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .function {
-    padding: 40px 45px 40px 30px;
-  }
-}
+
 .tuto-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -195,32 +185,9 @@ body {
   padding-left: 20px;
   margin-top: 40px;
 }
-@media screen and (min-width: 1024px) {
-  .tuto-title {
-    margin-left: 135px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tuto-title {
-    margin-left: 0;
-  }
-}
 
 .tuto-buttons {
   margin-bottom: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .tuto-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 88px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tuto-buttons {
-    display: inline;
-  }
 }
 
 .tuto-button {
@@ -233,26 +200,15 @@ body {
   margin: 20px;
   height: 72.5px;
 }
-@media screen and (min-width: 1024px) {
-  .tuto-button {
-    height: 72.5px;
-    padding-right: 50px;
-  }
-}
 
 .tuto-number {
   background: #9356dc;
-  color: #FFF;
+  color: #fff;
   width: 24px;
   height: 24px;
   border-radius: 50px;
   position: absolute;
   margin-left: -100%;
-}
-@media screen and (min-width: 1024px) {
-  .tuto-number {
-    margin-right: -47px;
-  }
 }
 
 .number {
@@ -271,20 +227,9 @@ body {
 .tuto-icon {
   color: #7e7e7e;
 }
-@media screen and (min-width: 1024px) {
-  .tuto-icon {
-    padding-right: 14px;
-    margin: 0 0 0 30px;
-  }
-}
 
 .tuto-color {
-  color: rgb(147, 86, 220);
-}
-@media screen and (min-width: 1024px) {
-  .tuto-color {
-    margin: 0 12px 0 25px;
-  }
+  color: rgba(147, 86, 220);
 }
 
 .tuto-text {
@@ -293,30 +238,15 @@ body {
   font-size: 16px;
   padding: 20px;
 }
-@media screen and (min-width: 1024px) {
-  .tuto-text {
-    margin-left: -20px;
-  }
-}
 
 .section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
-@media screen and (min-width: 1024px) {
-  .section-title {
-    margin-left: 65px;
-    margin-top: -22px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .section-title {
-    margin-left: 25px;
-  }
-}
 
 /****** restaurants ***********/
+
 .section-cards {
   background-color: #f8f9f9;
   width: 90%;
@@ -324,52 +254,16 @@ body {
   padding-top: 20px;
   padding-left: 18px;
 }
-@media screen and (min-width: 1024px) {
-  .section-cards {
-    padding: 50px 180px 50px 130px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .section-cards {
-    padding: 40px 80px 0 0;
-  }
-}
 
 .restaurants-cards {
   margin: 0;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 0fr);
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .restaurants-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
 }
 
 .card {
   margin-bottom: 15px;
   border-radius: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-}
-@media screen and (min-width: 1024px) {
-  .card {
-    margin: 50px;
-    width: 490px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .card {
-    width: 100%;
-    margin: 30px;
-  }
 }
 
 .lien-card {
@@ -399,22 +293,10 @@ body {
   width: 100%;
   height: 174px;
 }
-@media screen and (min-width: 1024px) {
-  .card-img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .card-img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
 
 .img-card {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .cards {
@@ -428,7 +310,8 @@ body {
   margin-bottom: -12px;
   margin-top: 10px;
 }
-.card-title_subtitle {
+
+.card-subtitle {
   font-weight: 300;
   font-size: 17px;
   line-height: 19.92px;
@@ -443,26 +326,11 @@ body {
   position: absolute;
   padding-left: 220px;
 }
-@media screen and (min-width: 1024px) {
-  .liked {
-    margin-left: 200px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .liked {
-    margin-left: 547px;
-  }
-}
 
 .like {
   font-size: 22px;
   margin-top: -75px;
   margin-right: -68px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .like {
-    margin-left: -314px;
-  }
 }
 
 .menu-liked--outline {
@@ -473,7 +341,7 @@ body {
 .menu-liked--solid {
   background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
   opacity: 0;
@@ -487,61 +355,35 @@ body {
   opacity: 1;
 }
 
+.menu-liked--outline:before {
+  background-color: white;
+}
+
 /****** footer ***********/
+
 .footer {
   width: 100%;
-  background-color: rgb(53, 53, 53);
+  background-color: rgba(53, 53, 53);
 }
 
 .container-list {
   padding: 22px 25px 22px 25px;
-}
-@media screen and (min-width: 1024px) {
-  .container-list {
-    padding: 50px 0 25px 50px;
-  }
 }
 
 .logo-footer {
   width: 139px;
   filter: invert(1);
 }
-@media screen and (min-width: 1024px) {
-  .logo-footer {
-    float: right;
-    margin-top: 30px;
-    margin-right: 80px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .logo-footer {
-    float: left;
-    margin-top: -26px;
-  }
-}
 
 .liens-footer {
-  color: #FFF;
+  color: #fff;
   list-style: none;
   padding-left: 3px;
-}
-@media screen and (min-width: 1024px) {
-  .liens-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 190px);
-    padding-left: 515px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .liens-footer {
-    padding-left: 0px;
-    text-align: center;
-  }
 }
 
 .second-lien {
   font-family: "Roboto", sans-serif;
-  font-size: 16;
+  font-size: 16px;
   line-height: 18.75px;
 }
 
@@ -553,12 +395,6 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 1024px) {
-  .lien2 {
-    padding-top: 15px;
-    margin-left: -45px;
-  }
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -566,402 +402,129 @@ a {
   transition: all 0.3s ease;
 }
 
-/****** Pages menus ***********/
-.header-button {
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 17px;
-  font-size: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .header-button {
-    margin-left: -620px;
-  }
-}
+/****** Medias Queries homepage ***********/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-img {
-    padding-left: 247px;
-  }
-}
-.header-arrow {
-  color: black;
-}
-
-.banniere_1 {
-  background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  padding: 113px;
-  background-size: cover;
-  background-position: left top;
-}
+/* big devices (desktop) */
 @media screen and (min-width: 1024px) {
-  .banniere_1 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -256px;
-    margin-left: -127px;
+  .menu-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .banniere_1 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-    margin-left: -107px;
+  .function {
+    padding: 50px 180px 50px 50px;
   }
-}
-.banniere_2 {
-  background-image: url("assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  padding: 113px;
-  background-size: cover;
-  background-position: right;
-}
-@media screen and (min-width: 1024px) {
-  .banniere_2 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -256px;
-    margin-left: -127px;
+  .tuto-title {
+    margin-left: 135px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .banniere_2 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-    margin-left: -107px;
-  }
-}
-.banniere_3 {
-  background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  padding: 113px;
-  background-size: cover;
-  background-position: left top;
-}
-@media screen and (min-width: 1024px) {
-  .banniere_3 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -256px;
-    margin-left: -127px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .banniere_3 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-    margin-left: -107px;
-  }
-}
-.banniere_4 {
-  background-image: url("assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  padding: 113px;
-  background-size: cover;
-  background-position: left top;
-}
-@media screen and (min-width: 1024px) {
-  .banniere_4 {
-    width: 1440px;
-    height: 588px;
-    margin-top: -256px;
-    margin-left: -127px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .banniere_4 {
-    width: 100%;
-    height: 305px;
-    margin-top: -175px;
-    margin-left: -107px;
-  }
-}
-
-.container-menu {
-  border-top-right-radius: 32px;
-  border-top-left-radius: 32px;
-  background-color: rgb(246, 246, 246);
-  padding-top: 15px;
-  padding-bottom: 40px;
-  position: relative;
-  margin-top: -49px;
-}
-@media screen and (min-width: 1024px) {
-  .container-menu {
-    margin: -32px 152px 0 152px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .container-menu {
-    margin: 56px;
-    margin-top: -50px;
-    margin-bottom: 0;
-  }
-}
-
-.title-menu {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 40px;
-  margin: 15px 0 15px 0;
-  padding-left: 10px;
-}
-@media screen and (min-width: 1024px) {
-  .title-menu {
+  .tuto-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 88px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .title-menu {
-    padding-left: 160px;
+  .tuto-button {
+    height: 72.5px;
+    padding-right: 50px;
   }
-}
-
-.liked2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding-left: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .liked2 {
-    padding-left: 120px;
+  .tuto-number {
+    margin-right: -47px;
   }
-}
-
-.menu-liked--outline1 {
-  position: absolute;
-  margin-top: -75px;
-  margin-right: -215px;
-  font-size: 22px;
-}
-
-.menu-liked--solid2 {
-  font-size: 22px;
-  margin-top: -75px;
-  margin-right: -215px;
-  background: linear-gradient(160deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity 500ms ease-in-out;
-}
-
-.liked2:hover .menu-liked--outline1 {
-  opacity: 0;
-}
-
-.liked2:hover .menu-liked--solid2 {
-  opacity: 1;
-}
-
-.menu-liked--outline1:before {
-  background-color: #FFF;
-}
-
-@media screen and (min-width: 1024px) {
-  .menu-category {
-    width: 634px;
-    height: 270px;
-    padding-left: 267px;
-    margin: 40px;
+  .tuto-icon {
+    padding-right: 14px;
+    margin: 0 0 0 30px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu-category {
-    margin: 28px;
+  .tuto-color {
+    margin: 0 12px 0 25px;
   }
-}
-.menu-category4 {
-  width: 634px;
-  height: 270px;
-  padding-left: 267px;
-  margin: 40px;
-  padding-top: 57px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu-category4 {
-    padding-left: 0;
-    margin: 30px;
-    padding-top: 57px;
+  .tuto-text {
+    margin-left: -20px;
   }
-}
-
-.menu-category-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16;
-  margin-left: 13px;
-}
-@media screen and (min-width: 1024px) {
-  .menu-category-title {
-    margin-bottom: 20px;
+  .section-title {
+    margin-left: 65px;
+    margin-top: -22px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu-category-title {
-    margin-left: 40px;
+  .section-cards {
+    padding: 50px 180px 50px 130px;
   }
-}
-
-.entries:after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  margin-left: -66px;
-  margin-top: 27px;
-}
-
-.dishes:after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  margin-left: -45px;
-  margin-top: 27px;
-}
-
-.desserts:after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  margin-left: -74px;
-  margin-top: 27px;
-}
-
-.click-button {
-  color: #89c8fa;
-  opacity: 1;
-}
-
-.dish-category {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  border-radius: 15.04px;
-  background-color: white;
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  margin-top: 17px;
-  opacity: 0;
-  animation: dish-category ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 0.7s;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .dish-category {
-    margin-left: 40px;
+  .restaurants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
   }
-}
-
-.dish-category-container {
-  width: 100%;
-  padding: 10px;
-  white-space: nowrap;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.dish-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16;
-  line-height: 21.09px;
-  margin: 0;
-}
-
-.dish-ingredient {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 17.63px;
-  margin: 0;
-}
-
-.dish-price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 15.04px;
-  line-height: 17.63px;
-  text-align: end;
-  margin: 0;
-}
-
-.check {
-  transition: 1s;
-  width: 80px;
-  height: 100%;
-  margin-right: -80px;
-  background-color: #99e2d0;
-}
-
-.dish-category:hover .check {
-  margin-right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-circle-check {
-  padding: 25px 25px 25px 20px;
-  color: #FFF;
-}
-
-.menu-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16;
-  color: #FFF;
-  padding: 13px;
-  border-radius: 25px;
-  border: none;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-  margin-top: 50px;
-  width: 60%;
-  margin-left: 65px;
-}
-@media screen and (min-width: 1024px) {
-  .menu-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 186px;
-    height: 50px;
-    margin-left: 515px;
+  .card {
+    margin: 50px;
+    width: 490px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu-btn {
-    margin-left: 137px;
+  .card-img {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
-}
-
-.menu-btn:hover {
-  opacity: 0.83;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .liked {
+    margin-left: 200px;
+  }
   .container-list {
-    padding: 50px 25px 22px 25px;
+    padding: 50px 0 25px 50px;
+  }
+  .logo-footer {
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+  }
+  .liens-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    padding-left: 515px;
+  }
+  .lien2 {
+    padding-top: 15px;
+    margin-left: -45px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .liens-footer {
-    text-align: left;
+  .text-button {
+    margin-left: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+  .function {
+    padding: 40px 45px 40px 30px;
+  }
+  .tuto-title {
+    margin-left: 0;
+  }
+  .tuto-buttons {
+    display: inline;
+  }
+  .section-title {
+    margin-left: 25px;
+  }
+  .section-cards {
+    padding: 40px 80px 0 0;
+  }
+  .restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .card {
+    width: 100%;
+    margin: 30px;
+  }
+  .card-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .liked {
+    margin-left: 547px;
+  }
+  .like {
+    margin-left: -314px;
+  }
+  .logo-footer {
+    float: left;
+    margin-top: -26px;
+  }
+  .liens-footer {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
