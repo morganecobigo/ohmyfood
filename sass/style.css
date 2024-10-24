@@ -355,10 +355,6 @@ body {
   opacity: 1;
 }
 
-.menu-liked--outline:before {
-  background-color: white;
-}
-
 /****** footer ***********/
 
 .footer {
