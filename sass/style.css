@@ -13,14 +13,14 @@ body {
   justify-content: center;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   z-index: 9999;
-  animation: 0s linear fadeout 2.3s forwards;
+  animation: 0s linear 2.3s forwards fadeout;
   opacity: 0.8;
+  pointer-events: none;
 }
 
 @keyframes fadeout {
   to {
     opacity: 0;
-    visibility: hidden;
   }
 }
 .cs-loader-inner {
@@ -159,7 +159,7 @@ label:nth-child(1) {
 .text-button {
   display: inline-block;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16;
   color: #fff;
   padding: 13px;
   border-radius: 32px;
@@ -168,7 +168,6 @@ label:nth-child(1) {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   text-decoration: none;
-  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .text-button {
@@ -176,8 +175,7 @@ label:nth-child(1) {
   }
 }
 .text-button:hover {
-  opacity: 0.85;
-  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.35));
+  opacity: 0.83;
 }
 
 /****** fonctionnement ***********/
@@ -361,7 +359,11 @@ label:nth-child(1) {
   border-radius: 15px;
   background-color: #fff;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+  position: relative; /* pour le positionnement absolu de l'icône */
 }
+
+/* Reste du CSS pour .card inchangé */
+
 @media screen and (min-width: 1024px) {
   .card {
     margin: 50px;
@@ -444,29 +446,13 @@ label:nth-child(1) {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: absolute;
-  padding-left: 220px;
-}
-@media screen and (min-width: 1024px) {
-  .liked {
-    margin-left: 200px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .liked {
-    margin-left: 547px;
-  }
+  position: absolute; /* superposer l'icône sur la carte */
+  bottom: 30px; /* Positionnez en haut */
+  right: 20px; /* Positionnez à droite */
 }
 
 .like {
-  font-size: 22px;
-  margin-top: -75px;
-  margin-right: -68px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .like {
-    margin-left: -314px;
-  }
+  font-size: 22px; /* Gardez la taille */
 }
 
 .menu-liked--outline {
