@@ -359,7 +359,7 @@ label:nth-child(1) {
   border-radius: 15px;
   background-color: #fff;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-  position: relative; /* pour le positionnement absolu de l'icône */
+  position: relative;
 }
 
 /* Reste du CSS pour .card inchangé */
@@ -446,13 +446,13 @@ label:nth-child(1) {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: absolute; /* superposer l'icône sur la carte */
-  bottom: 30px; /* Positionnez en haut */
-  right: 20px; /* Positionnez à droite */
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
 }
 
 .like {
-  font-size: 22px; /* Gardez la taille */
+  font-size: 22px;
 }
 
 .menu-liked--outline {

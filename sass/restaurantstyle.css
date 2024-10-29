@@ -95,6 +95,8 @@ body {
   margin-top: -75px;
   margin-right: -215px;
   font-size: 22px;
+  color: black; /* Assurez-vous qu'il n'y a pas de fond */
+  transition: opacity 500ms ease-in-out;
 }
 
 .menu-liked--solid2 {
@@ -105,6 +107,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms ease-in-out;
+  opacity: 0; /* Icône remplie invisible par défaut */
 }
 
 .liked2:hover .menu-liked--outline1 {
@@ -116,7 +119,9 @@ body {
 }
 
 .menu-liked--outline1:before {
-  background-color: white;
+  background: transparent;
+  border: black; /* Pas de fond blanc */
+  /* Supprimez le pseudo-élément s’il n’est pas nécessaire */
 }
 .menu-category {
   opacity: 0;
